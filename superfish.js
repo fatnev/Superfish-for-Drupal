@@ -48,7 +48,7 @@
       p = o.$path;
       for (var l = 0; l < p.length; l++){
         p.eq(l).addClass([o.hoverClass,c.bcClass].join(' ')).filter('li:has(ul)').removeClass(o.pathClass);
-      }
+      } 
       sf.o[s] = sf.op = o;
 
       $('li:has(ul)',this)[($.fn.hoverIntent && !o.disableHI) ? 'hoverIntent' : 'hover'](over,out).each(function() {
